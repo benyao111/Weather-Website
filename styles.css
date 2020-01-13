@@ -1,0 +1,71 @@
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border;
+}
+
+header{
+	position: fixed;
+	left:80px; top: 20px;
+	text-align: center;
+	color: yellow;
+	font-family: sans-serif;
+	font-style: italic;
+	font-size:25px;
+	background: none;
+}
+
+body{
+	height:100vh;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	background-image: url("weather.png");
+	background-size: 300px;
+	align-items: center;
+	color: white;
+}
+.temperature,
+.location {
+	height: 30vh;
+	width: 50%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	text-transform: capitalize;
+	font-size: 25px;
+}
+
+.temperature{
+	flex-direction: column;
+}
+
+
+.degree-section {
+	display: flex;
+	align-items: center;
+}
+
+.degree-section span {
+	margin: 10px;
+	font-size: 40px;
+}
+
+.degree-section h1 {
+	font-size: 60px;
+	cursor: pointer;
+}
+
+.temperature-description {
+	font-size: 30px
+}
+
+footer{
+	position: relative;
+	right: 1000000px bottom: 2000000000px;
+	text-align: right;
+	color: black;
+	background: none;
+	font-size: 20px;
+	font-style: italic;
+}
