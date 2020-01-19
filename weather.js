@@ -32,7 +32,7 @@ window.addEventListener('load', () => {
 				locationTimezone.textContent = data.name; 
 				//Celcius to Fahrenheit Formula
 				let f = (temp * (9 / 5) + 32) ; 
-				console.log (f);
+				//console.log (f);
 	// Change Temperature from C to F 
 		temperatureSection.addEventListener("click", () => {
 			if (temperatureSpan.textContent === "C") {
@@ -42,7 +42,16 @@ window.addEventListener('load', () => {
 			} else { 
 				temperatureSpan.textContent = "C";
 				temperatureDegree.textContent = temp;
-				
+			//Background color changing - changes after 2 clicks but not entirely sure why!!
+		window.addEventListener("click", () => {
+			if ( temp >= 23 ) {
+				document.body.style.background = "linear-gradient(red,yellow)";
+				; 
+			} else if (temp <= 1 ) {
+				document.body.style.background = "linear-gradient(blue,white)";
+			}
+			else{ document.body.style.background = "linear-gradient(green,yellow)";
+			}})
 		}})
 		})
 			});
@@ -54,4 +63,3 @@ window.addEventListener('load', () => {
 		});
 
 		//maybe next you can make background change with an if statment. like if(temp < 0 or whatnot then background changes to light blue gradient or some snowy shit)
-		
