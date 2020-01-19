@@ -42,7 +42,7 @@ window.addEventListener('load', () => {
 			} else { 
 				temperatureSpan.textContent = "C";
 				temperatureDegree.textContent = temp;
-			//Background color changing - changes after 2 clicks but not entirely sure why!!
+			//Background color changing - changes after 2 clicks 
 		window.addEventListener("click", () => {
 			if ( temp >= 23 ) {
 				document.body.style.background = "linear-gradient(red,yellow)";
@@ -62,4 +62,3 @@ window.addEventListener('load', () => {
 		};
 		});
 
-		//maybe next you can make background change with an if statment. like if(temp < 0 or whatnot then background changes to light blue gradient or some snowy shit)
